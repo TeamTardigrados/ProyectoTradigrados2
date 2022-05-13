@@ -6,53 +6,38 @@ using UnityEngine.UI;
 public class Huevo : MonoBehaviour
 {
     [SerializeField] private Animator animator = null;
-    [SerializeField] private GameObject collectPiece = null;
-    [SerializeField] private Texto dialoguePanel = null;
-    [SerializeField] private Button btnContinue = null;
-    [SerializeField] private float waitTimeBrokenEgg = 2f;
-
-    private int counter = 0;
-    private SoundManager soundManager;
-
+    [SerializeField] private GameObject recogerP = null;
+    int Contador = 0;
+    [SerializeField] Button BtnContinuar;
     void Start()
     {
-        btnContinue.interactable = false;
+        BtnContinuar.interactable = false;
     }
-
-    private void Awake()
-    {
-        soundManager = FindObjectOfType<SoundManager>();
-    }
-
     private void OnMouseDown()
     {
-            counter++;
-            switch (counter)
+            Contador++;
+
+            switch (Contador)
             {
                 case 1:
                     animator.SetTrigger("isOpen1");
-                    soundManager.SeleccionAudio(0, 0.5f);
                     break;
 
                 case 2:
                     animator.SetTrigger("isOpen2");
-                    soundManager.SeleccionAudio(0, 0.5f);
                     break;
 
                 case 3:
                     animator.SetTrigger("isOpen3");
-                    soundManager.SeleccionAudio(7, 0.5f);
                     StartCoroutine(WaitThenLoad());
+                    BtnContinuar.interactable = true;
                     break;
             }
     }
    
     private IEnumerator WaitThenLoad()
     {
-        yield return new WaitForSecondsRealtime(waitTimeBrokenEgg);
-        collectPiece.SetActive(true);
-        dialoguePanel.LineTemp = 2;
-        dialoguePanel.StartDialogue();
-        btnContinue.interactable = true;
+        yield return new WaitForSecondsRealtime(2f);
+        recogerP.SetActive(true);
     }
 }

@@ -6,8 +6,10 @@ public class TardigradoController : MonoBehaviour
 {
     // Start is called before the first frame update
     Animator anim;
-    [SerializeField]Interfaz_controller interfazController;
-    [SerializeField] Humedad humedad;
+    [SerializeField]
+    Interfaz_controller interfazController;
+    [SerializeField]
+    Humedad humedad;
     void Start()
     {
         anim = GetComponent<Animator>();

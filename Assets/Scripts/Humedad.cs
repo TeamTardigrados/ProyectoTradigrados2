@@ -32,7 +32,6 @@ public class Humedad : MonoBehaviour
         if (sliderTemperatura.temperaturaActual >= 0.8f || sliderTemperatura.temperaturaActual <= 0.2f)
         {
             humedad -= 7f * Time.deltaTime;
-
             if (humedad <= 0 )
             {
                 OnWaterEnd?.Invoke();
