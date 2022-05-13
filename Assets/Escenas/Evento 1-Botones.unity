@@ -878,11 +878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueButton: {fileID: 421040951}
   dialoguePanel: {fileID: 808593923}
-  dialogueText: {fileID: 495324392275976504}
-  lineIndex: 0
-  lineTemp: 0
-  charsToPlays: 3
-  typingTime: 0.04
+  dialogueText: {fileID: 0}
   dialogueLines:
   - 'Traigo ante usted este regalo. '
   - "Incluso en este estado, su m\xE1s vulnerable, es una forma de vida extraordinaria."
@@ -1044,7 +1040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -1919,10 +1915,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 560082048}
-  collectPiece: {fileID: 4379190555346873189}
-  dialoguePanel: {fileID: 421040955}
-  btnContinue: {fileID: 888751666}
-  waitTimeBrokenEgg: 2
+  recogerP: {fileID: 4379190555346873189}
+  BtnContinuar: {fileID: 888751666}
 --- !u!4 &1345110309
 Transform:
   m_ObjectHideFlags: 0
@@ -2288,7 +2282,6 @@ MonoBehaviour:
   GoteroBTN: {fileID: 1002792357}
   sliderTemp: {fileID: 824576436}
   sliderRadi: {fileID: 668161800}
-  SiguienteEventoBTN: {fileID: 888751666}
 --- !u!4 &1747946505
 Transform:
   m_ObjectHideFlags: 0
@@ -2581,17 +2574,6 @@ PrefabInstance:
       objectReference: {fileID: 421040955}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
---- !u!114 &495324392275976504 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2893524981773618103, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
-  m_PrefabInstance: {fileID: 495324392275976503}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2662064314435203297
 PrefabInstance:
   m_ObjectHideFlags: 0
