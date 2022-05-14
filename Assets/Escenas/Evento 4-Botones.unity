@@ -651,7 +651,7 @@ Transform:
   - {fileID: 1733479131}
   - {fileID: 555551488}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &254019096
 GameObject:
@@ -1000,10 +1000,10 @@ RectTransform:
   - {fileID: 1596158798}
   - {fileID: 1806516733}
   - {fileID: 449543086}
+  - {fileID: 1434246135}
   - {fileID: 2077494785}
   - {fileID: 946984166}
   - {fileID: 194091243}
-  - {fileID: 1434246135}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1767,7 +1767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -2331,7 +2331,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 379425880}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3651,7 +3651,7 @@ RectTransform:
   - {fileID: 1989157836}
   - {fileID: 975796548}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5422,6 +5422,10 @@ MonoBehaviour:
   recogerA: {fileID: 555551487}
   recogerB: {fileID: 555551487}
   recogerC: {fileID: 2077494786}
+  turbinaCohete: {fileID: 555551487}
+  alasCohete: {fileID: 555551487}
+  baseCohete: {fileID: 555551487}
+  cabezaCohete: {fileID: 975796547}
 --- !u!114 &1820976100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6151,7 +6155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_AnchorMax.x

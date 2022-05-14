@@ -322,6 +322,10 @@ MonoBehaviour:
   recogerA: {fileID: 993717819}
   recogerB: {fileID: 1531642100}
   recogerC: {fileID: 1531642100}
+  turbinaCohete: {fileID: 1531642100}
+  alasCohete: {fileID: 571080706}
+  baseCohete: {fileID: 1531642100}
+  cabezaCohete: {fileID: 1531642100}
 --- !u!4 &54912193
 Transform:
   m_ObjectHideFlags: 0
@@ -992,9 +996,9 @@ RectTransform:
   - {fileID: 1864743794}
   - {fileID: 955537518}
   - {fileID: 1331727450}
+  - {fileID: 1974762661}
   - {fileID: 993717818}
   - {fileID: 1489389489}
-  - {fileID: 1974762661}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2526,7 +2530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2995,7 +2999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -3831,7 +3835,7 @@ RectTransform:
   m_Children:
   - {fileID: 1451555324}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -5537,7 +5541,7 @@ RectTransform:
   - {fileID: 313239570}
   - {fileID: 571080707}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

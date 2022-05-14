@@ -53,6 +53,11 @@ public class Mision : MonoBehaviour
     [SerializeField] private GameObject recogerA = null;
     [SerializeField] private GameObject recogerB = null;
     [SerializeField] private GameObject recogerC = null;
+
+    [SerializeField] private GameObject turbinaCohete = null;
+    [SerializeField] private GameObject alasCohete = null;
+    [SerializeField] private GameObject baseCohete = null;
+    [SerializeField] private GameObject cabezaCohete = null;
     void Start()
     {
         BtnContinuar.interactable = false;
@@ -296,17 +301,21 @@ public class Mision : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3f);
         recogerA.SetActive(true);
+        alasCohete.SetActive(true);
+
     }
     private IEnumerator WaitThenLoadEvento3()
     {
         yield return new WaitForSecondsRealtime(3f);
         recogerB.SetActive(true);
+        baseCohete.SetActive(true);
     }
 
     private IEnumerator WaitThenLoadEvento4()
     {
         yield return new WaitForSecondsRealtime(3f);
         recogerC.SetActive(true);
+        cabezaCohete.SetActive(true);
     }
 }
 

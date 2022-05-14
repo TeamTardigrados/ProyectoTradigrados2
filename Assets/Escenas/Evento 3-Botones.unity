@@ -858,7 +858,7 @@ RectTransform:
   - {fileID: 632037134}
   - {fileID: 1538285844}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 15
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1352,11 +1352,11 @@ RectTransform:
   - {fileID: 1361965945}
   - {fileID: 1596158798}
   - {fileID: 218259673}
+  - {fileID: 250048466}
   - {fileID: 1907778100}
   - {fileID: 393295636}
   - {fileID: 2034190619}
   - {fileID: 544251191}
-  - {fileID: 250048466}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1395,7 +1395,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 379425880}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1571,7 +1571,7 @@ RectTransform:
   m_Children:
   - {fileID: 1763591178}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -2616,6 +2616,10 @@ MonoBehaviour:
   recogerA: {fileID: 1946732779}
   recogerB: {fileID: 1907778101}
   recogerC: {fileID: 1946732779}
+  turbinaCohete: {fileID: 544251190}
+  alasCohete: {fileID: 544251190}
+  baseCohete: {fileID: 1538285843}
+  cabezaCohete: {fileID: 544251190}
 --- !u!1 &779554661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3523,7 +3527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -5605,7 +5609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6037,7 +6041,7 @@ Transform:
   - {fileID: 243786393}
   - {fileID: 1946732782}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034801343
 GameObject:
