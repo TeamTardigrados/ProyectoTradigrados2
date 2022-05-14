@@ -2535,9 +2535,9 @@ MonoBehaviour:
   mision9Cumplida: {fileID: 1946732779}
   contadorHidratacion: 0
   BtnContinuar: {fileID: 1091882647}
-  recogerA: {fileID: 0}
+  recogerA: {fileID: 1946732779}
   recogerB: {fileID: 1907778101}
-  recogerC: {fileID: 0}
+  recogerC: {fileID: 1946732779}
 --- !u!1 &779554661
 GameObject:
   m_ObjectHideFlags: 0

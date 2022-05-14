@@ -320,8 +320,8 @@ MonoBehaviour:
   contadorHidratacion: 0
   BtnContinuar: {fileID: 2662064314435203298}
   recogerA: {fileID: 993717819}
-  recogerB: {fileID: 0}
-  recogerC: {fileID: 0}
+  recogerB: {fileID: 1531642100}
+  recogerC: {fileID: 1531642100}
 --- !u!4 &54912193
 Transform:
   m_ObjectHideFlags: 0

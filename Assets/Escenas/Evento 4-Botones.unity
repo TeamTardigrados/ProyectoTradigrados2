@@ -5190,8 +5190,8 @@ MonoBehaviour:
   mision9Cumplida: {fileID: 1504746133}
   contadorHidratacion: 0
   BtnContinuar: {fileID: 19249765}
-  recogerA: {fileID: 0}
-  recogerB: {fileID: 0}
+  recogerA: {fileID: 555551487}
+  recogerB: {fileID: 555551487}
   recogerC: {fileID: 2077494786}
 --- !u!114 &1820976100
 MonoBehaviour:
