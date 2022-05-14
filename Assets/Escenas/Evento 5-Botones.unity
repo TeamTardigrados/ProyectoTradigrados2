@@ -817,17 +817,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423307693}
   m_CullTransparentMesh: 1
---- !u!114 &441728657 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2662064313644352430, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
-  m_PrefabInstance: {fileID: 2662064314435203297}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &635680316
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,10 +2515,6 @@ MonoBehaviour:
   dialogueButton: {fileID: 1037515747}
   dialoguePanel: {fileID: 134095204}
   dialogueText: {fileID: 134095202}
-  lineIndex: 0
-  lineTemp: 0
-  charsToPlays: 3
-  typingTime: 0.04
   dialogueLines:
   - "\xBFSab\xEDas esto? \n\n\xA1Este peque\xF1o animalito es el \xFAnico capaz de
     sobrevivir al vac\xEDo del espacio!"
@@ -2651,7 +2636,6 @@ MonoBehaviour:
   GoteroBTN: {fileID: 1567974205}
   sliderTemp: {fileID: 1134757039}
   sliderRadi: {fileID: 668161800}
-  SiguienteEventoBTN: {fileID: 441728657}
 --- !u!4 &1747946505
 Transform:
   m_ObjectHideFlags: 0
@@ -2678,10 +2662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ce0753f576dd54384b0e6ffd1780d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventoBTN1: {fileID: 0}
-  eventoBTN2: {fileID: 0}
-  eventoBTN3: {fileID: 0}
-  eventoBTN4: {fileID: 0}
   sliderTemp: {fileID: 0}
   sliderRadi: {fileID: 668161800}
   FondoActual: {fileID: 891423126}
