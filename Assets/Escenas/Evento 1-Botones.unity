@@ -879,10 +879,6 @@ MonoBehaviour:
   dialogueButton: {fileID: 421040951}
   dialoguePanel: {fileID: 808593923}
   dialogueText: {fileID: 495324392275976504}
-  lineIndex: 0
-  lineTemp: 0
-  charsToPlays: 3
-  typingTime: 0.04
   dialogueLines:
   - 'Traigo ante usted este regalo. '
   - "Incluso en este estado, su m\xE1s vulnerable, es una forma de vida extraordinaria."
@@ -1413,17 +1409,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &888751666 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2662064313644352430, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
-  m_PrefabInstance: {fileID: 2662064314435203297}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &891423125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,10 +1904,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 560082048}
-  collectPiece: {fileID: 4379190555346873189}
-  dialoguePanel: {fileID: 421040955}
-  btnContinue: {fileID: 888751666}
-  waitTimeBrokenEgg: 2
+  recogerP: {fileID: 0}
+  BtnContinuar: {fileID: 0}
 --- !u!4 &1345110309
 Transform:
   m_ObjectHideFlags: 0
@@ -2288,7 +2271,6 @@ MonoBehaviour:
   GoteroBTN: {fileID: 1002792357}
   sliderTemp: {fileID: 824576436}
   sliderRadi: {fileID: 668161800}
-  SiguienteEventoBTN: {fileID: 888751666}
 --- !u!4 &1747946505
 Transform:
   m_ObjectHideFlags: 0
@@ -2353,7 +2335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2943,11 +2925,6 @@ PrefabInstance:
 --- !u!224 &4379190555346873188 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
-  m_PrefabInstance: {fileID: 2776123173018603314}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4379190555346873189 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1891731516370920535, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
   m_PrefabInstance: {fileID: 2776123173018603314}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8386587841958564875
