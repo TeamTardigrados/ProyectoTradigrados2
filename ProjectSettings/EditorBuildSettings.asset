@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Escenas/Evento 5-Botones.unity
     guid: c3633df765729fa4c9c9299706c77829
   - enabled: 1
+    path: Assets/Escenas/GraciasPorJugar.unity
+    guid: aac166b4516c46d47a4dffbfd1664091
+  - enabled: 1
     path: Assets/Escenas/Final.unity
     guid: 00e1bdb29d7fd9a48bbb224634f4c5c6
   - enabled: 1

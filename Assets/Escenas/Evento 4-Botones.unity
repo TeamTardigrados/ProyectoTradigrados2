@@ -651,7 +651,7 @@ Transform:
   - {fileID: 1733479131}
   - {fileID: 555551488}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &254019096
 GameObject:
@@ -989,6 +989,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 2077494785}
   - {fileID: 1437436294}
   - {fileID: 668161798}
   - {fileID: 2072006955}
@@ -1002,7 +1003,6 @@ RectTransform:
   - {fileID: 449543086}
   - {fileID: 946984166}
   - {fileID: 194091243}
-  - {fileID: 2077494785}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1137,7 +1137,7 @@ RectTransform:
   m_Children:
   - {fileID: 33123684}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1770,7 +1770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -1818,7 +1818,7 @@ RectTransform:
   - {fileID: 178619238}
   - {fileID: 1046539427}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -1.506, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2073,7 +2073,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 379425880}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2334,7 +2334,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 379425880}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2490,7 +2490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7420061372685295430, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7420061372685295430, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2608,7 +2608,7 @@ RectTransform:
   m_Children:
   - {fileID: 1170670375}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -3575,7 +3575,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 379425880}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3800,17 +3800,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1493021694 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2893524981773618103, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
-  m_PrefabInstance: {fileID: 1806516731}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1504746133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4305,7 +4294,7 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 379425880}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -4432,11 +4421,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
-  dialogueText: {fileID: 1493021694}
+  dialogueText: {fileID: 0}
   lineIndex: 0
   lineTemp: 0
-  charsToPlays: 3
-  typingTime: 0.04
+  charsToPlays: 0
+  typingTime: 0
   dialogueLines:
   - "Ahora si, dale un poco de agua al peque\xF1o."
   - "\xA1Vaya, pero si no es la mism\xEDsima Marie Curie! ..."
@@ -4624,7 +4613,7 @@ MonoBehaviour:
   GoteroBTN: {fileID: 1894759782}
   sliderTemp: {fileID: 1545637987}
   sliderRadi: {fileID: 1545637987}
-  SiguienteEventoBTN: {fileID: 19249765}
+  SiguienteEventoBTN: {fileID: 0}
 --- !u!4 &1747946505
 Transform:
   m_ObjectHideFlags: 0
@@ -4834,7 +4823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 342054447435987405, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 342054447435987405, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5134,6 +5123,9 @@ MonoBehaviour:
   mision9Cumplida: {fileID: 1504746133}
   contadorHidratacion: 0
   BtnContinuar: {fileID: 19249765}
+  recogerA: {fileID: 0}
+  recogerB: {fileID: 0}
+  recogerC: {fileID: 0}
 --- !u!114 &1820976100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5633,7 +5625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9025175520283337889, guid: d737d8b62c349004ab3f9e690bd50452, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9025175520283337889, guid: d737d8b62c349004ab3f9e690bd50452, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5764,7 +5756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5878,7 +5870,7 @@ RectTransform:
   m_Children:
   - {fileID: 1894759781}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5999,7 +5991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2662064313644352431, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2662064313644352431, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
       propertyPath: m_AnchorMax.x

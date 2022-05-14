@@ -878,7 +878,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueButton: {fileID: 421040951}
   dialoguePanel: {fileID: 808593923}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 495324392275976504}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 3
+  typingTime: 0.04
   dialogueLines:
   - 'Traigo ante usted este regalo. '
   - "Incluso en este estado, su m\xE1s vulnerable, es una forma de vida extraordinaria."
@@ -1915,8 +1919,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 560082048}
-  recogerP: {fileID: 4379190555346873189}
-  BtnContinuar: {fileID: 888751666}
+  collectPiece: {fileID: 4379190555346873189}
+  dialoguePanel: {fileID: 421040955}
+  btnContinue: {fileID: 888751666}
+  waitTimeBrokenEgg: 2
 --- !u!4 &1345110309
 Transform:
   m_ObjectHideFlags: 0
@@ -2282,6 +2288,7 @@ MonoBehaviour:
   GoteroBTN: {fileID: 1002792357}
   sliderTemp: {fileID: 824576436}
   sliderRadi: {fileID: 668161800}
+  SiguienteEventoBTN: {fileID: 888751666}
 --- !u!4 &1747946505
 Transform:
   m_ObjectHideFlags: 0
@@ -2353,7 +2360,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aaadb9f20d277b34a8e99a0a00f2c9d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ef407549be28324d8e244a6124183b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2574,6 +2581,17 @@ PrefabInstance:
       objectReference: {fileID: 421040955}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+--- !u!114 &495324392275976504 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2893524981773618103, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+  m_PrefabInstance: {fileID: 495324392275976503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2662064314435203297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2727,6 +2745,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 379425880}
     m_Modifications:
+    - target: {fileID: 1891731516370920521, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516370920521, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 95c1efaee98deb14796de1c7571f6ce4, type: 3}
+    - target: {fileID: 1891731516370920521, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_Color.a
+      value: 0.98039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516370920521, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516370920521, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516370920521, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2815,6 +2857,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Recoger Pieza del cohete
       objectReference: {fileID: 0}
+    - target: {fileID: 1891731516370920535, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740309, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 461.7456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740309, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 528.2506
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740309, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740309, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740311, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: edcb895302eb6664998c0132bca599a7, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
 --- !u!1001 &4258913077944719822
