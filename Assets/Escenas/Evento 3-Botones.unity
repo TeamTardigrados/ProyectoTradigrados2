@@ -2535,6 +2535,9 @@ MonoBehaviour:
   mision9Cumplida: {fileID: 1946732779}
   contadorHidratacion: 0
   BtnContinuar: {fileID: 1091882647}
+  recogerA: {fileID: 0}
+  recogerB: {fileID: 1907778101}
+  recogerC: {fileID: 0}
 --- !u!1 &779554661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5481,6 +5484,11 @@ PrefabInstance:
 --- !u!224 &1907778100 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+  m_PrefabInstance: {fileID: 1907778099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1907778101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1891731516370920535, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
   m_PrefabInstance: {fileID: 1907778099}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1946732779

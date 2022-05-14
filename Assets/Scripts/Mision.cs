@@ -6,27 +6,27 @@ using UnityEngine.UI;
 
 public class Mision : MonoBehaviour
 {
-    bool estaAbierto=false;
+    bool estaAbierto = false;
 
     [SerializeField] Humedad Humedad;
     float criptobiosisTimer = 0;
     float humedadCambiante = 0;
     float humedadAnterior = 0;
-    float humedad=0;
+    float humedad = 0;
     [SerializeField] int contadorHumedadAcabada = 0;
 
     [SerializeField] Interfaz_controller interfaz_Controller;
-    float temperatura=0;
-    float temperaturaAnterior =0;
-    float temperaturaCambiante=0;
+    float temperatura = 0;
+    float temperaturaAnterior = 0;
+    float temperaturaCambiante = 0;
 
     [SerializeField] SliderRadiacion sliderRadiacion;
     float radiacion = 0;
-    float radiacionAnterior=0;
+    float radiacionAnterior = 0;
     float radiacionCambiante = 0;
 
-    [SerializeField] int contadorTemperaturaBaja=0; //variables para contar tiempo para la mision numero 1 (logica)
-    float temperaturaBajaTimer =0; //variables para contar tiempo para la mision numero 1 (logica)
+    [SerializeField] int contadorTemperaturaBaja = 0; //variables para contar tiempo para la mision numero 1 (logica)
+    float temperaturaBajaTimer = 0; //variables para contar tiempo para la mision numero 1 (logica)
     float temperaturaBajaTimerMax = 0.5f; //variables para contar tiempo para la mision numero 1 (logica)
 
     //Timers
@@ -44,11 +44,15 @@ public class Mision : MonoBehaviour
     [SerializeField] GameObject mision7Cumplida;
     [SerializeField] GameObject mision8Cumplida;
     [SerializeField] GameObject mision9Cumplida;
-    
+
     public int contadorHidratacion = 0;
 
     [SerializeField] Button BtnContinuar;
-    
+
+    //Recoger piezas del cohete
+    [SerializeField] private GameObject recogerA = null;
+    [SerializeField] private GameObject recogerB = null;
+    [SerializeField] private GameObject recogerC = null;
     void Start()
     {
         BtnContinuar.interactable = false;
@@ -71,7 +75,7 @@ public class Mision : MonoBehaviour
             SubeTemperaturaCriptobiosis();
             ActualizarRadicion();
             RadiacionCambiante();
-            
+
             BajarLaTemperatura();
             AumentaRadiacionyTemperatura();
             DisminuyeRadiacionyTemperatura();
@@ -83,7 +87,7 @@ public class Mision : MonoBehaviour
         }
         Hidratar5Veces();
     }
-    
+
     void ActualizarTemperatura()
     {
         temperatura = float.Parse(interfaz_Controller.estadisticaTemperatura.text);
@@ -105,7 +109,7 @@ public class Mision : MonoBehaviour
     //MISIONES EVENTO 2
 
     // 1. Tardi el Heladero
-    void BajaTempertauraTresVeces() 
+    void BajaTempertauraTresVeces()
     {
         temperaturaBajaTimer += Time.deltaTime;
         if (temperatura <= -80 && temperaturaBajaTimer > temperaturaBajaTimerMax)
@@ -126,7 +130,7 @@ public class Mision : MonoBehaviour
     }
 
     // 2. Lluvia
-    void Hidratar5Veces() 
+    void Hidratar5Veces()
     {
         if (contadorHidratacion >= 5)
         {
@@ -142,19 +146,19 @@ public class Mision : MonoBehaviour
     }
 
     // 3. Estado crítico
-    void BajaTemperaturaCriptobiosis()  
-    {         
-            criptobiosisTimer += Time.deltaTime;
-            if (temperatura <= -60 && Humedad.humedad <= 1 && criptobiosisTimer > 0.5f)
+    void BajaTemperaturaCriptobiosis()
+    {
+        criptobiosisTimer += Time.deltaTime;
+        if (temperatura <= -60 && Humedad.humedad <= 1 && criptobiosisTimer > 0.5f)
+        {
+            if (humedadCambiante != 0)
             {
-                if (humedadCambiante != 0)
-                {
-                    contadorHumedadAcabada++;
-                    criptobiosisTimer = 0;
-                }
+                contadorHumedadAcabada++;
+                criptobiosisTimer = 0;
             }
+        }
 
-            if (contadorHumedadAcabada == 2) mision3Cumplida.SetActive(true);         
+        if (contadorHumedadAcabada == 2) mision3Cumplida.SetActive(true);
     }
     void HumedadCambiante()
     {
@@ -169,11 +173,11 @@ public class Mision : MonoBehaviour
 
     // 4. Tropi-Tardigrado
     void SubeTemperaturaCriptobiosis()
-    { 
-        if(temperatura >= 60)
+    {
+        if (temperatura >= 60)
         {
             criptobiosisTimer += Time.deltaTime;
-            if (Humedad.humedad <= 1 && criptobiosisTimer > 0.5f )
+            if (Humedad.humedad <= 1 && criptobiosisTimer > 0.5f)
             {
                 if (humedadCambiante != 0)
                 {
@@ -183,17 +187,17 @@ public class Mision : MonoBehaviour
             }
             if (contadorHumedadAcabada == 2) mision4Cumplida.SetActive(true);
         }
-      
+
     }
 
     // 5. Hidratación Controlada
     public void DetectarHidratacion40a50()
     {
         Debug.Log("se invoco funcion detectarHidartacion40a50");
-        if(Humedad.humedad >= 40f && Humedad.humedad <= 50f) 
+        if (Humedad.humedad >= 40f && Humedad.humedad <= 50f)
         {
             mision5Cumplida.SetActive(true);
-        }   
+        }
     }
 
     // 6. ¿Frío? ¿En el Serengueti?
@@ -201,12 +205,12 @@ public class Mision : MonoBehaviour
     {
         if (temperatura <= -80 && !mision6Cumplida.activeSelf)
         {
-            bajarTemperaturaTimer += 1f*Time.deltaTime;
+            bajarTemperaturaTimer += 1f * Time.deltaTime;
             if (bajarTemperaturaTimer > 3f)
             {
                 mision6Cumplida.SetActive(true);
             }
-        } 
+        }
     }
 
 
@@ -222,11 +226,11 @@ public class Mision : MonoBehaviour
     }
     void AumentaRadiacionyTemperatura()
     {
-        if (radiacion >= 70 && temperatura >=99)
+        if (radiacion >= 70 && temperatura >= 99)
         {
             subirTemperaturaTimer += 1f * Time.deltaTime;
             subirRadiacionTimer += 1f * Time.deltaTime;
-            if (subirTemperaturaTimer > 2f && subirRadiacionTimer> 2f)
+            if (subirTemperaturaTimer > 2f && subirRadiacionTimer > 2f)
             {
                 mision7Cumplida.SetActive(true);
             }
@@ -259,34 +263,50 @@ public class Mision : MonoBehaviour
 
 
     //Desbloqueo de botón de paso de escena cuando se completan las misiones
+    bool flagEvento2 = true;
+    bool flagEvento3 = true;
+    bool flagEvento4 = true;
     void PasoDeEvento()
     {  //Evento 2
-        if (mision1Cumplida.activeSelf==true && mision2Cumplida.activeSelf==true && mision3Cumplida.activeSelf == true)
+        if (mision1Cumplida.activeSelf == true && mision2Cumplida.activeSelf == true && mision3Cumplida.activeSelf == true && flagEvento2)
         {
+            StartCoroutine(WaitThenLoadEvento2());
             BtnContinuar.interactable = true;
+            flagEvento2 = false;
         }
-        else
-        {
-            BtnContinuar.interactable = false;
-        }
+
         //Evento 3
-        if (mision3Cumplida.activeSelf == true && mision4Cumplida.activeSelf == true && mision5Cumplida.activeSelf == true)
+        if (mision3Cumplida.activeSelf == true && mision4Cumplida.activeSelf == true && mision5Cumplida.activeSelf == true && flagEvento3)
         {
+            StartCoroutine(WaitThenLoadEvento3());
             BtnContinuar.interactable = true;
+            flagEvento3 = false;
         }
-        else
-        {
-            BtnContinuar.interactable = false;
-        }
+
         //Evento 4
-        if (mision6Cumplida.activeSelf == true && mision7Cumplida.activeSelf == true && mision8Cumplida.activeSelf == true)
+        if (mision6Cumplida.activeSelf == true && mision7Cumplida.activeSelf == true && mision8Cumplida.activeSelf == true && flagEvento4)
         {
+            StartCoroutine(WaitThenLoadEvento4());
             BtnContinuar.interactable = true;
-        }
-        else
-        {
-            BtnContinuar.interactable = false;
+            flagEvento4 = false;
         }
     }
-  
+
+    private IEnumerator WaitThenLoadEvento2()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        recogerA.SetActive(true);
+    }
+    private IEnumerator WaitThenLoadEvento3()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        recogerB.SetActive(true);
+    }
+
+    private IEnumerator WaitThenLoadEvento4()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        recogerC.SetActive(true);
+    }
 }
+
