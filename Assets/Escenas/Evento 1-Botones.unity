@@ -1040,7 +1040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -1921,6 +1921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 560082048}
   recogerP: {fileID: 912261193}
+  turbinaCohete: {fileID: 1372685242}
   BtnContinuar: {fileID: 924514399}
 --- !u!4 &1345110309
 Transform:

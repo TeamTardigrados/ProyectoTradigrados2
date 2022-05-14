@@ -7,6 +7,7 @@ public class Huevo : MonoBehaviour
 {
     [SerializeField] private Animator animator = null;
     [SerializeField] private GameObject recogerP = null;
+    [SerializeField] private GameObject turbinaCohete = null;
     int Contador = 0;
     [SerializeField] Button BtnContinuar;
     void Start()
@@ -39,5 +40,6 @@ public class Huevo : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2f);
         recogerP.SetActive(true);
+       turbinaCohete.SetActive(true);
     }
 }

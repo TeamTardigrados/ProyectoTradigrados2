@@ -54,7 +54,6 @@ public class Mision : MonoBehaviour
     [SerializeField] private GameObject recogerB = null;
     [SerializeField] private GameObject recogerC = null;
 
-    [SerializeField] private GameObject turbinaCohete = null;
     [SerializeField] private GameObject alasCohete = null;
     [SerializeField] private GameObject baseCohete = null;
     [SerializeField] private GameObject cabezaCohete = null;
