@@ -2612,7 +2612,7 @@ MonoBehaviour:
   mision8Cumplida: {fileID: 1946732779}
   mision9Cumplida: {fileID: 1946732779}
   contadorHidratacion: 0
-  BtnContinuar: {fileID: 1091882647}
+  BtnContinuar: {fileID: 1361965946}
   recogerA: {fileID: 1946732779}
   recogerB: {fileID: 1907778101}
   recogerC: {fileID: 1946732779}
@@ -3458,17 +3458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12916b19ce1d0e4f95b7bf0098ed0bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1091882647 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2662064313644352430, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
-  m_PrefabInstance: {fileID: 2662064314435203297}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1113174673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3526,7 +3515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
