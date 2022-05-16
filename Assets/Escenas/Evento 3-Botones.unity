@@ -2616,7 +2616,6 @@ MonoBehaviour:
   recogerA: {fileID: 1946732779}
   recogerB: {fileID: 1907778101}
   recogerC: {fileID: 1946732779}
-  turbinaCohete: {fileID: 544251190}
   alasCohete: {fileID: 544251190}
   baseCohete: {fileID: 1538285843}
   cabezaCohete: {fileID: 544251190}
@@ -3064,7 +3063,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 53e2c7248f20baa419f35c2a799d3a55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 04057d38abe263042a07085b0f07bcd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5340,6 +5339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cac9e70ba34b044d9efc7cf031bd0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  misionesBTN: {fileID: 544251193}
   GoteroBTN: {fileID: 544251193}
   sliderTemp: {fileID: 668161800}
   sliderRadi: {fileID: 668161800}
