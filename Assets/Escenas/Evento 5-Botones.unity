@@ -2633,6 +2633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cac9e70ba34b044d9efc7cf031bd0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  misionesBTN: {fileID: 1567974205}
   GoteroBTN: {fileID: 1567974205}
   sliderTemp: {fileID: 1134757039}
   sliderRadi: {fileID: 668161800}

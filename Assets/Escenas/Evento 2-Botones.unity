@@ -322,7 +322,6 @@ MonoBehaviour:
   recogerA: {fileID: 993717819}
   recogerB: {fileID: 1531642100}
   recogerC: {fileID: 1531642100}
-  turbinaCohete: {fileID: 1531642100}
   alasCohete: {fileID: 571080706}
   baseCohete: {fileID: 1531642100}
   cabezaCohete: {fileID: 1531642100}
@@ -4955,6 +4954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cac9e70ba34b044d9efc7cf031bd0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  misionesBTN: {fileID: 1489389491}
   GoteroBTN: {fileID: 1489389491}
   sliderTemp: {fileID: 668161800}
   sliderRadi: {fileID: 668161800}
