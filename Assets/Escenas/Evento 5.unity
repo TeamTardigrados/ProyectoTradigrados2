@@ -490,6 +490,8 @@ MonoBehaviour:
   sliderTemperatura: {fileID: 0}
   estadisticaTemperatura: {fileID: 0}
   temperaturaActual: 0
+  fuego1: {fileID: 0}
+  fuego2: {fileID: 0}
 --- !u!1 &867099961
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +708,8 @@ MonoBehaviour:
   sliderTemperatura: {fileID: 0}
   estadisticaTemperatura: {fileID: 0}
   temperaturaActual: 0
+  fuego1: {fileID: 0}
+  fuego2: {fileID: 0}
 --- !u!1 &993754819
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,6 +829,8 @@ MonoBehaviour:
   sliderTemperatura: {fileID: 0}
   estadisticaTemperatura: {fileID: 0}
   temperaturaActual: 0
+  fuego1: {fileID: 0}
+  fuego2: {fileID: 0}
 --- !u!1 &1036023209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,7 +1146,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457099935}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8e0cc97dfd2334345be2501159bb48d9, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: bb1e69e95e3f9c24db57ac9f8167afdc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1492340826}
@@ -1428,6 +1434,8 @@ MonoBehaviour:
   sliderTemperatura: {fileID: 0}
   estadisticaTemperatura: {fileID: 0}
   temperaturaActual: 0
+  fuego1: {fileID: 0}
+  fuego2: {fileID: 0}
 --- !u!1 &1529345855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,6 +1935,8 @@ MonoBehaviour:
   sliderTemperatura: {fileID: 0}
   estadisticaTemperatura: {fileID: 0}
   temperaturaActual: 0
+  fuego1: {fileID: 0}
+  fuego2: {fileID: 0}
 --- !u!1 &2064273657
 GameObject:
   m_ObjectHideFlags: 0
