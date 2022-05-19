@@ -5,12 +5,33 @@ using UnityEngine.UI;
 
 public class activalluvia : MonoBehaviour
 {
-    public GameObject rightframe;
-    public bool isEnabled = false;
+    [SerializeField] ParticleSystem lluvia;
+    //public GameObject rightframe;
+    //bool isEnabled = false;
 
+    void Awake()
+    {
+        lluvia.GetComponent<ParticleSystem>();
+    }
+    //void Update()
+    //{
+    //    ButtonClicked();
+    //}
     public void ButtonClicked()
     {
-        isEnabled = ! isEnabled;
-        rightframe.SetActive(isEnabled);
+        //isEnabled = true;
+        //rightframe.SetActive(isEnabled);
+        lluvia.Play();
+        StartCoroutine(WaitThenLoadEvento3());
+        
+
+    }
+    private IEnumerator WaitThenLoadEvento3()
+    {
+        yield return new WaitForSecondsRealtime(3f);
+        lluvia.Stop();
+        //isEnabled = false;
+        //rightframe.SetActive(isEnabled);
+
     }
 }

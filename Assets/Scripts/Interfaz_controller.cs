@@ -23,7 +23,7 @@ public class Interfaz_controller : MonoBehaviour
     void Update()
     {
         Fuego();
-        FuegoRepositioner();
+        //FuegoRepositioner();
     }
     public void SliderTemp()
     {
