@@ -9,6 +9,7 @@ public class Humedad : MonoBehaviour
     public Slider barraHumedad;
     [SerializeField] public float humedad;
     [SerializeField] float maxHumedad = 100f;
+    [SerializeField] private ParticleSystem lluvia;
     public Text estaditicaHumedad;
     [SerializeField] Interfaz_controller sliderTemperatura;
     public Action OnWaterEnd;
@@ -43,6 +44,10 @@ public class Humedad : MonoBehaviour
     
     public void AumentoHumedad()
     {
+        var destinolluvia = new Vector3(538 ,903 ,-1);
+        Instantiate(lluvia, destinolluvia, Quaternion.identity);
+
+
         OnGetWater?.Invoke();
         mision1.DetectarHidratacion40a50();
         mision2.RehidratarTradigrado();
