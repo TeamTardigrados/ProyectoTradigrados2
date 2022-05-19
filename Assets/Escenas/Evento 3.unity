@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video: {fileID: 1645276555}
-  numeroEscena: 5
+  numeroEscena: 6
 --- !u!1 &1663525530
 GameObject:
   m_ObjectHideFlags: 0

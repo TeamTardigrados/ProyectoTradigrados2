@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Humedad : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class Humedad : MonoBehaviour
     [SerializeField] Mision mision2;
 
     void Start()
-    {
+    {  
         humedad = maxHumedad;
     }
     void Update()

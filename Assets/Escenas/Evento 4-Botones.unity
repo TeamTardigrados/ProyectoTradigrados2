@@ -998,9 +998,9 @@ RectTransform:
   - {fileID: 994255040}
   - {fileID: 1670827991}
   - {fileID: 1596158798}
+  - {fileID: 1434246135}
   - {fileID: 1806516733}
   - {fileID: 449543086}
-  - {fileID: 1434246135}
   - {fileID: 2077494785}
   - {fileID: 946984166}
   - {fileID: 194091243}
@@ -1138,7 +1138,7 @@ RectTransform:
   m_Children:
   - {fileID: 33123684}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1484,6 +1484,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555551487}
   m_CullTransparentMesh: 1
+--- !u!1001 &589944700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2812859705107550262, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: sliderTemperatura
+      value: 
+      objectReference: {fileID: 1034288272}
+    - target: {fileID: 2812859705267312440, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_Name
+      value: Fuegos
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 248
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812859706497422713, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+      propertyPath: sliderTemperatura
+      value: 
+      objectReference: {fileID: 1034288272}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+--- !u!1 &589944701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2812859706497422712, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+  m_PrefabInstance: {fileID: 589944700}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &589944702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2812859705107550266, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
+  m_PrefabInstance: {fileID: 589944700}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &600942060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,6 +2623,14 @@ PrefabInstance:
       propertyPath: Fondo
       value: 
       objectReference: {fileID: 891423126}
+    - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
+      propertyPath: fuego1
+      value: 
+      objectReference: {fileID: 589944702}
+    - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
+      propertyPath: fuego2
+      value: 
+      objectReference: {fileID: 589944701}
     - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
       propertyPath: estadisticaTemperatura
       value: 
@@ -3651,7 +3734,7 @@ RectTransform:
   - {fileID: 1989157836}
   - {fileID: 975796548}
   m_Father: {fileID: 379425880}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4832,6 +4915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cac9e70ba34b044d9efc7cf031bd0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  misionesBTN: {fileID: 1894759782}
   GoteroBTN: {fileID: 1894759782}
   sliderTemp: {fileID: 1545637987}
   sliderRadi: {fileID: 1545637987}
@@ -5044,7 +5128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 342054447435987405, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 342054447435987405, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5422,7 +5506,6 @@ MonoBehaviour:
   recogerA: {fileID: 555551487}
   recogerB: {fileID: 555551487}
   recogerC: {fileID: 2077494786}
-  turbinaCohete: {fileID: 555551487}
   alasCohete: {fileID: 555551487}
   baseCohete: {fileID: 555551487}
   cabezaCohete: {fileID: 975796547}
