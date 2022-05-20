@@ -598,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -2598,6 +2598,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 134095204}
   dialogueText: {fileID: 134095202}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   lineIndex: 0
   lineTemp: 0
@@ -2609,6 +2610,8 @@ MonoBehaviour:
   typingTime: 0
 >>>>>>> 7e06c00bc705faa0ebdb31a0b7970a6bcc65916f
 >>>>>>> parent of 6c3d539 (Revert "evento 3")
+=======
+>>>>>>> parent of 9a85679 (cinematica luna)
   dialogueLines:
   - "\xBFSab\xEDas esto? \n\n\xA1Este peque\xF1o animalito es el \xFAnico capaz de
     sobrevivir al vac\xEDo del espacio!"
