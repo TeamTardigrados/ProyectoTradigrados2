@@ -1501,7 +1501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1729,6 +1729,10 @@ MonoBehaviour:
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
   dialogueText: {fileID: 0}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 0
+  typingTime: 0
   dialogueLines:
   - "Ahora si, dale un poco de agua al peque\xF1o."
   - "\xA1Vaya, pero si no es la mism\xEDsima Marie Curie! ..."
@@ -1794,7 +1798,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2828,11 +2832,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1002792360}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
+        m_MethodName: PlayOneShot
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: 4a8778d1980e63a4da84148da6759bbf, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2845,6 +2849,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1002792360}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: b60b8d25eb71f2344bee7673c6f3e4f5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2898,7 +2914,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b60b8d25eb71f2344bee7673c6f3e4f5, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2906,7 +2922,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 61
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -3174,7 +3190,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1954533162339378150, guid: 9c0d2012d6a9d7e4ba83d3a3ca7a21d7, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1954533162339378150, guid: 9c0d2012d6a9d7e4ba83d3a3ca7a21d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3726,7 +3742,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4258913077796929908, guid: a111444211ac32c46ba0992c26fc6a5a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4258913077796929908, guid: a111444211ac32c46ba0992c26fc6a5a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4493,7 +4509,7 @@ Transform:
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1661058742
 GameObject:
@@ -4804,7 +4820,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 1824334957}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 3
+  typingTime: 0.04
   dialogueLines:
   - "Ahora si, dale un poco de agua al peque\xF1o."
   - "\xA1Vaya, pero si no es la mism\xEDsima Marie Curie! ..."
@@ -5458,6 +5478,14 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1670827995}
+    - target: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleClick
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
 --- !u!224 &1806516733 stripped
@@ -5623,8 +5651,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1824334957 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2893524981773618103, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+  m_PrefabInstance: {fileID: 1806516731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1880668997
 GameObject:
   m_ObjectHideFlags: 0
