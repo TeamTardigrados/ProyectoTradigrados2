@@ -2599,6 +2599,7 @@ MonoBehaviour:
   dialogueText: {fileID: 134095202}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   lineIndex: 0
   lineTemp: 0
@@ -2610,6 +2611,8 @@ MonoBehaviour:
   typingTime: 0
 >>>>>>> 7e06c00bc705faa0ebdb31a0b7970a6bcc65916f
 >>>>>>> parent of 6c3d539 (Revert "evento 3")
+=======
+>>>>>>> parent of 9a85679 (cinematica luna)
 =======
 >>>>>>> parent of 9a85679 (cinematica luna)
   dialogueLines:
