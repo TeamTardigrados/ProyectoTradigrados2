@@ -445,7 +445,7 @@ MonoBehaviour:
   dialogueLines:
   - "Ah, eres t\xFA. Olvid\xE9 por completo llamarte...."
   - "\xBFQu\xE9? \xBFD\xF3nde estamos? Pues, creo que la pregunta m\xE1s acertada
-    es \u201C\xBFen qu\xE9 momento estamos?\u201D"
+    es \u201C\xBFen qu\xE9\nmomento estamos?\u201D"
   - "La temperatura ambiente no sub\xEDa lo suficientemente r\xE1pido,..."
   - "\xA1As\xED que decid\xED que di\xE9ramos un peque\xF1o salto a un clima m\xE1s
     agradable!..."
@@ -456,16 +456,10 @@ MonoBehaviour:
   - ...
   - "\xBFQue?..."
   - "\xA1Por supuesto que es el mismo Tard\xEDgrado, dimos un salto en el tiempo!..."
-  - "\xA1Por supuesto que es el mismo Tard\xEDgrado, dimos un salto en el tiempo!..."
   - "De no ser as\xED, estar\xEDas viendo a su tatara tatara tatara tatara tatara\u2026 "
-  - "en fin. El animalito vive poco m\xE1s de dos a\xF1os. \nDe no ser por m\xED\u2026"
   - "en fin. El animalito vive poco m\xE1s de dos a\xF1os. \nDe no ser por m\xED\u2026"
   - "\xA1Ah! \nEstoy divagando. Nada malo podr\xEDa pasarle al Tard\xEDgrado mientras
     estemos aqu\xED. "
-  - "\xA1Baja la temperatura, r\xE1pido! "
-  - ...
-  - "Parece ser que ser\xE1 imposible despertarle aqu\xED\u2026"
-  - "\xBFQu\xE9 te parece si conocemos a los humanos? "
 --- !u!1 &178619237
 GameObject:
   m_ObjectHideFlags: 0

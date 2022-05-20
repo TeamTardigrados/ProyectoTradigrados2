@@ -769,93 +769,84 @@ PrefabInstance:
       objectReference: {fileID: 218259674}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[0]
-      value: "Ah, eres t\xFA. Olvid\xE9 por completo llamarte...."
+      value: "Auch, no me esperaba que algo como eso pasara, eso debi\xF3 doler\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[1]
-      value: "\xBFQu\xE9? \xBFD\xF3nde estamos? Pues, creo que la pregunta m\xE1s
-        acertada es \u201C\xBFen qu\xE9 momento estamos?\u201D"
+      value: "Observa, otra vez nuestro amiguito cay\xF3 en su estado de criptobiosis\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[2]
-      value: "La temperatura ambiente no sub\xEDa lo suficientemente r\xE1pido,..."
+      value: "Es hora de ayudarlo a que despierte y observe el ambiente en el que
+        est\xE1.."
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[3]
-      value: "\xA1As\xED que decid\xED que di\xE9ramos un peque\xF1o salto a un clima
-        m\xE1s agradable!..."
+      value: "Puedes hacer que la temperatura est\xE9 m\xE1s estable y volver a hidratarlo\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[4]
-      value: "\xBFCu\xE1nto tiempo? No mucho, unos cuantos millones de a\xF1os, nada
-        m\xE1s... "
+      value: "Terminamos aqu\xED y nos vamos a conocer a los humanos."
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[5]
-      value: "\xBFQui\xE9n soy? \xA1Oye, demasiadas preguntas! Concentr\xE9monos
-        en lo importante,..."
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[6]
-      value: "\xA1El tard\xEDgrado ha vuelto a la normalidad!"
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[7]
-      value: "\xA1Est\xE1 feliz de verte de nuevo! "
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[8]
-      value: ...
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[9]
-      value: "\xBFQue?..."
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[10]
-      value: "\xA1Por supuesto que es el mismo Tard\xEDgrado, dimos un salto en el
-        tiempo!..."
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[11]
-      value: "\xA1Por supuesto que es el mismo Tard\xEDgrado, dimos un salto en el
-        tiempo!..."
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[12]
-      value: "De no ser as\xED, estar\xEDas viendo a su tatara tatara tatara tatara
-        tatara\u2026 "
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[13]
-      value: "en fin. El animalito vive poco m\xE1s de dos a\xF1os. \nDe no ser por
-        m\xED\u2026"
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[14]
-      value: "en fin. El animalito vive poco m\xE1s de dos a\xF1os. \nDe no ser por
-        m\xED\u2026"
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[15]
-      value: "\xA1Ah! \nEstoy divagando. Nada malo podr\xEDa pasarle al Tard\xEDgrado
-        mientras estemos aqu\xED. "
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[16]
-      value: "\xA1Baja la temperatura, r\xE1pido! "
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[17]
-      value: ...
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[18]
-      value: "Parece ser que ser\xE1 imposible despertarle aqu\xED\u2026"
+      value: "\xBFQu\xE9 te parece si conocemos a los humanos? "
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[19]
