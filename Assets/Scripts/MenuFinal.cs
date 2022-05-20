@@ -19,20 +19,20 @@ public class MenuFinal : MonoBehaviour
 
     public void BotonCreditos()
     {
-        SceneManager.LoadScene(12);
+        SceneManager.LoadScene(13);
     }
 
     public void BotonCreditosArte()
     {
-        SceneManager.LoadScene(13);
+        SceneManager.LoadScene(14);
     }
     public void BotonCreditosProg()
     {
-        SceneManager.LoadScene(14);
+        SceneManager.LoadScene(15);
     }
 
     public void BotonMenuFin()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene(12);
     }
 }
