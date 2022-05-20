@@ -8,25 +8,32 @@ public class Texto : MonoBehaviour
     [SerializeField] private Button dialogueButton = null;
     [SerializeField] private GameObject dialoguePanel = null;
     [SerializeField] private TMP_Text dialogueText = null;
+    [SerializeField] private int lineIndex = 0;
+    [SerializeField] private int lineTemp = 0;
+    [SerializeField] private int charsToPlays = 0;
+    [SerializeField] private float typingTime = 0f;
     [SerializeField, TextArea(4, 6)] private string[] dialogueLines = null;
-    private float typingTime = 0.04f;
-    private bool didDialogueStart = false;
-    private int lineIndex = 0 ;
 
-    private void Start()
+    private bool didDialogueStart = false;
+    private SoundManager soundManager;
+
+    public int LineTemp { get => lineTemp; set => lineTemp = value; }
+
+    private void Awake()
     {
-        dialogueButton.onClick.AddListener(HandleClick);
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
-    private void StartDialogue()
+    public void StartDialogue()
     {
-        lineIndex = 0;
+        lineIndex = lineTemp;
         StartCoroutine(ShowLine());
+        soundManager.SeleccionAudio(5, 0.5f);
         didDialogueStart = true;
         dialoguePanel.SetActive(true);
     }
 
-    private void HandleClick()
+    public void HandleClick(bool isNext)
     {
         if (!didDialogueStart)
         {
@@ -34,35 +41,67 @@ public class Texto : MonoBehaviour
         }
         else if (dialogueText.text == dialogueLines[lineIndex])
         {
-            NextDialogueLine();
+            if (isNext) { NextDialogueLine(); }
+            else { BackDialogueLine(); }
         }
         else
         {
-            StopAllCoroutines();
-            dialogueText.text = dialogueLines[lineIndex];
+            CloseDialogue();
         }
     }
 
-    private void NextDialogueLine()
+    public void NextDialogueLine()
     {
         lineIndex++;
+        soundManager.SeleccionAudio(5, 0.5f);
         if (lineIndex < dialogueLines.Length)
         {
             StartCoroutine(ShowLine());
         }
         else
         {
-            didDialogueStart = false;
-            dialoguePanel.SetActive(false);
+            lineIndex = 0;
+            StartCoroutine(ShowLine());
         }
+    }
+
+    public void BackDialogueLine()
+    {
+        lineIndex--;
+        soundManager.SeleccionAudio(5, 0.5f);
+        if (lineIndex >= 0)
+        {
+            StartCoroutine(ShowLine());
+        }
+        else
+        {
+            lineIndex = dialogueLines.Length - 1;
+            StartCoroutine(ShowLine());
+        }
+    }
+
+    public void CloseDialogue()
+    {
+        lineTemp = lineIndex;
+        StopAllCoroutines();
+        soundManager.SeleccionAudio(5, 0.5f);
+        dialogueText.text = dialogueLines[lineIndex];
+        dialogueButton.interactable = true;
     }
 
     private IEnumerator ShowLine()
     {
         dialogueText.text = string.Empty;
+        int charIndex = 0;
         foreach (char ch in dialogueLines[lineIndex])
         {
             dialogueText.text += ch;
+            if (charIndex % charsToPlays == 0)
+            {
+                soundManager.SeleccionAudio(6, 0.05f);
+            }
+
+            charIndex++;
             yield return new WaitForSeconds(typingTime);
         }
     }
