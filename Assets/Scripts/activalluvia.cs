@@ -13,25 +13,14 @@ public class activalluvia : MonoBehaviour
     {
         lluvia.GetComponent<ParticleSystem>();
     }
-    //void Update()
-    //{
-    //    ButtonClicked();
-    //}
     public void ButtonClicked()
     {
-        //isEnabled = true;
-        //rightframe.SetActive(isEnabled);
         lluvia.Play();
         StartCoroutine(WaitThenLoadEvento3());
-        
-
     }
     private IEnumerator WaitThenLoadEvento3()
     {
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(2f);
         lluvia.Stop();
-        //isEnabled = false;
-        //rightframe.SetActive(isEnabled);
-
     }
 }
