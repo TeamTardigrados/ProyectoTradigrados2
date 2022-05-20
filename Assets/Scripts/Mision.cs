@@ -307,14 +307,14 @@ public class Mision : MonoBehaviour
         yield return new WaitForSecondsRealtime(3f);
         recogerA.SetActive(true);
         alasCohete.SetActive(true);
-        soundManager.SeleccionAudio(7, 0.5f);
+        //soundManager.SeleccionAudio(7, 0.5f);
 
     }
     private IEnumerator WaitThenLoadEvento3()
     {
         yield return new WaitForSecondsRealtime(3f);
         recogerB.SetActive(true);
-        soundManager.SeleccionAudio(7, 0.5f);
+        //soundManager.SeleccionAudio(7, 0.5f);
         baseCohete.SetActive(true);
     }
 
@@ -322,8 +322,8 @@ public class Mision : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3f);
         recogerC.SetActive(true);
-        soundManager.SeleccionAudio(7, 0.5f);
-        Debug.Log("suenaa");
+        //soundManager.SeleccionAudio(7, 0.5f);
+        //Debug.Log("suenaa");
         cabezaCohete.SetActive(true);
     }
 }
