@@ -445,29 +445,12 @@ MonoBehaviour:
   dialogueButton: {fileID: 99590539}
   dialoguePanel: {fileID: 218259674}
   dialogueText: {fileID: 0}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 0
+  typingTime: 0
   dialogueLines:
-  - "Ah, eres t\xFA. Olvid\xE9 por completo llamarte...."
-  - "\xBFQu\xE9? \xBFD\xF3nde estamos? Pues, creo que la pregunta m\xE1s acertada
-    es \u201C\xBFen qu\xE9 momento estamos?\u201D"
-  - "La temperatura ambiente no sub\xEDa lo suficientemente r\xE1pido,..."
-  - "\xA1As\xED que decid\xED que di\xE9ramos un peque\xF1o salto a un clima m\xE1s
-    agradable!..."
-  - "\xBFCu\xE1nto tiempo? No mucho, unos cuantos millones de a\xF1os, nada m\xE1s... "
-  - "\xBFQui\xE9n soy? \xA1Oye, demasiadas preguntas! Concentr\xE9monos en lo importante,..."
-  - "\xA1El tard\xEDgrado ha vuelto a la normalidad!"
-  - "\xA1Est\xE1 feliz de verte de nuevo! "
-  - ...
-  - "\xBFQue?..."
-  - "\xA1Por supuesto que es el mismo Tard\xEDgrado, dimos un salto en el tiempo!..."
-  - "\xA1Por supuesto que es el mismo Tard\xEDgrado, dimos un salto en el tiempo!..."
-  - "De no ser as\xED, estar\xEDas viendo a su tatara tatara tatara tatara tatara\u2026 "
-  - "en fin. El animalito vive poco m\xE1s de dos a\xF1os. \nDe no ser por m\xED\u2026"
-  - "en fin. El animalito vive poco m\xE1s de dos a\xF1os. \nDe no ser por m\xED\u2026"
-  - "\xA1Ah! \nEstoy divagando. Nada malo podr\xEDa pasarle al Tard\xEDgrado mientras
-    estemos aqu\xED. "
-  - "\xA1Baja la temperatura, r\xE1pido! "
-  - ...
-  - "Parece ser que ser\xE1 imposible despertarle aqu\xED\u2026"
+  - No me esperaba eso...
   - "\xBFQu\xE9 te parece si conocemos a los humanos? "
 --- !u!1 &178619237
 GameObject:
@@ -707,6 +690,10 @@ PrefabInstance:
     - target: {fileID: 1997567932225553958, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212971022354462279, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
@@ -1505,6 +1492,10 @@ MonoBehaviour:
   dialogueButton: {fileID: 99590539}
   dialoguePanel: {fileID: 218259674}
   dialogueText: {fileID: 0}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 0
+  typingTime: 0
   dialogueLines:
   - "Ah, eres t\xFA. Olvid\xE9 por completo llamarte...."
   - "\xBFQu\xE9? \xBFD\xF3nde estamos? Pues, creo que la pregunta m\xE1s acertada
