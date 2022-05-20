@@ -472,6 +472,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 891423126}
     - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
+      propertyPath: nieve
+      value: 
+      objectReference: {fileID: 7503849989218310084, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+    - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
       propertyPath: fuego1
       value: 
       objectReference: {fileID: 1385981879}
@@ -2798,6 +2802,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 379425880}
     m_Modifications:
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: lineTemp
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 495324392275976504}
@@ -2807,7 +2815,7 @@ PrefabInstance:
       objectReference: {fileID: 808593923}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -2817,9 +2825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[3]
-      value: 'prueba
-
-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817337, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: m_Name

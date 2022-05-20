@@ -45,7 +45,6 @@ public class Interfaz_controller : MonoBehaviour
         {
             //frio
             Fondo.color = Color.Lerp(Color.cyan, Color.white, sliderTemperatura.value + 0.5f);
-            
             nieve.Play();
         }
         estadisticaTemperatura.text = ((int)(200f * sliderTemperatura.value) - 100f).ToString();

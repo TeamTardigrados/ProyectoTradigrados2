@@ -98,7 +98,7 @@ public class Texto : MonoBehaviour
             dialogueText.text += ch;
             if (charIndex % charsToPlays == 0)
             {
-                soundManager.SeleccionAudio(6, 0.05f);
+                soundManager.SeleccionAudio(6, 0.2f);
             }
 
             charIndex++;
