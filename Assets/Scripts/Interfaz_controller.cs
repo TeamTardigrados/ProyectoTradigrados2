@@ -13,7 +13,6 @@ public class Interfaz_controller : MonoBehaviour
 
     [SerializeField] private GameObject fuego1;
     [SerializeField] private GameObject fuego2;
-    private SoundManager soundManager;
 
     private void Start()
     {
@@ -21,14 +20,10 @@ public class Interfaz_controller : MonoBehaviour
         SliderTemp();
 
     }
-    private void Awake()
-    {
-        soundManager = FindObjectOfType<SoundManager>();
-    }
     void Update()
     {
         Fuego();
-        FuegoRepositioner();
+        //FuegoRepositioner();
     }
     public void SliderTemp()
     {
@@ -63,28 +58,15 @@ public class Interfaz_controller : MonoBehaviour
     }
     public void FuegoRepositioner()
     {
-        if (sliderTemperatura.value > 0.9f)
+        if (sliderTemperatura.value > 0.9)
         {
             fuego1.gameObject.transform.position = new Vector3(248, 199, 0);
             fuego2.gameObject.transform.position = new Vector3(802, 196, 0);
-            FuegoSound();
         }
-        else if (sliderTemperatura.value <= 0.9f)
+        else if (sliderTemperatura.value <= 0.9)
         {
             fuego1.gameObject.transform.position = new Vector3(248, 114, 0);
             fuego2.gameObject.transform.position = new Vector3(802, 111, 0);
-            FuegoSound();
-        }
-    }
-    public void FuegoSound()
-    {
-        if(sliderTemperatura.value == 0.52)
-        {
-            soundManager.SeleccionAudio(8, 0.2f);
-        }
-        else if(sliderTemperatura.value == 0.52)
-        {
-            soundManager.SeleccionAudio(8, 0.9f);
         }
     }
 
