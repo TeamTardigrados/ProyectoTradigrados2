@@ -600,6 +600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interfazController: {fileID: 399847782}
   humedad: {fileID: 1843361004}
+  isDried: 1
 --- !u!212 &276826835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3156,7 +3157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -6902,7 +6903,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7420061372685295431, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
       propertyPath: m_Value
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7420061372685295431, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size

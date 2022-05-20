@@ -8,6 +8,7 @@ public class TardigradoController : MonoBehaviour
     Animator anim;
     [SerializeField]Interfaz_controller interfazController;
     [SerializeField]Humedad humedad;
+    public bool isDried = true;
     private SoundManager soundManager;
     void Start()
     {
@@ -30,13 +31,13 @@ public class TardigradoController : MonoBehaviour
 
     }
 
-    void Dried()
+    public void Dried()
     {
         anim.SetBool("isDried", true);
         //soundManager.SeleccionAudio(0, 0.5f);
     }
 
-    void Hydrated()
+    public void Hydrated()
     {
         anim.SetBool("isDried", false);
     }
@@ -46,4 +47,5 @@ public class TardigradoController : MonoBehaviour
         humedad.OnWaterEnd -= Dried;
         humedad.OnGetWater -= Hydrated;
     }
+    
 }

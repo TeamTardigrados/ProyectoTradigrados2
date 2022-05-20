@@ -10,6 +10,7 @@ public class Humedad : MonoBehaviour
     public Slider barraHumedad;
     [SerializeField] public float humedad;
     [SerializeField] float maxHumedad = 100f;
+    [SerializeField] float tempHumedad = 0f;
     //[SerializeField] private ParticleSystem lluvia;
     public Text estaditicaHumedad;
     [SerializeField] Interfaz_controller sliderTemperatura;
@@ -26,7 +27,7 @@ public class Humedad : MonoBehaviour
     void Start()
     {  
         humedad = maxHumedad;
-
+        humedad = tempHumedad;
         //if( escenaActual == escenaEvento2)
         //{
         //    humedad = 0f;
