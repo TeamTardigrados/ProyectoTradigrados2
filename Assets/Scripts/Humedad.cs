@@ -19,9 +19,18 @@ public class Humedad : MonoBehaviour
     [SerializeField] Mision mision1;
     [SerializeField] Mision mision2;
 
+    //Scene escenaActual = SceneManager.GetActiveScene();
+    //Scene escenaEvento2 = SceneManager.GetSceneByName("Evento 2 - Botones");
+
+
     void Start()
     {  
         humedad = maxHumedad;
+
+        //if( escenaActual == escenaEvento2)
+        //{
+        //    humedad = 0f;
+        //}
     }
     void Update()
     {
