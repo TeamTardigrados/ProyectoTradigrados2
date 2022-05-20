@@ -84,12 +84,13 @@ public class Mision : MonoBehaviour
             AumentaRadiacionyTemperatura();
             DisminuyeRadiacionyTemperatura();
             PasoDeEvento();
+            Hidratar5Veces();
         }
         else
         {
             estaAbierto = false;
         }
-        Hidratar5Veces();
+        
     }
 
     void ActualizarTemperatura()
@@ -280,7 +281,7 @@ public class Mision : MonoBehaviour
         }
 
         //Evento 3
-        if (mision3Cumplida.activeSelf == true && mision4Cumplida.activeSelf == true && mision5Cumplida.activeSelf == true && flagEvento3)
+        if (mision4Cumplida.activeSelf == true && mision5Cumplida.activeSelf == true && mision6Cumplida.activeSelf == true && flagEvento3)
         {
             StartCoroutine(WaitThenLoadEvento3());
             BtnContinuar.interactable = true;
@@ -288,7 +289,7 @@ public class Mision : MonoBehaviour
         }
 
         //Evento 4
-        if (mision6Cumplida.activeSelf == true && mision7Cumplida.activeSelf == true && mision8Cumplida.activeSelf == true && flagEvento4)
+        if (mision7Cumplida.activeSelf == true && mision8Cumplida.activeSelf == true && mision9Cumplida.activeSelf == true && flagEvento4)
         {
             StartCoroutine(WaitThenLoadEvento4());
             BtnContinuar.interactable = true;

@@ -1416,7 +1416,7 @@ RectTransform:
   - {fileID: 2034190619}
   - {fileID: 544251191}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1598,7 +1598,7 @@ Transform:
   m_Children:
   - {fileID: 1227522433}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544251190
 GameObject:
@@ -1780,7 +1780,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 710873529}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AbrirCerrarMisiones, Assembly-CSharp
         m_MethodName: AbrirOCerrarMisionest
         m_Mode: 1
@@ -2547,8 +2547,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 710873530}
-  - component: {fileID: 710873529}
-  - component: {fileID: 710873531}
   m_Layer: 0
   m_Name: MissionManager
   m_TagString: Untagged
@@ -2556,20 +2554,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &710873529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710873528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd529a6f30b65c64fb406f174ac1cae7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CuadroMisiones: {fileID: 393295635}
-  MissionHolder: {fileID: 2034190618}
 --- !u!4 &710873530
 Transform:
   m_ObjectHideFlags: 0
@@ -2584,40 +2568,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &710873531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710873528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e57abf5ab0bd0d4a9802f0f9f49ec80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Humedad: {fileID: 1081573627}
-  contadorHumedadAcabada: 0
-  interfaz_Controller: {fileID: 691498471}
-  sliderRadiacion: {fileID: 668161801}
-  contadorTemperaturaBaja: 0
-  mision1Cumplida: {fileID: 1946732779}
-  mision2Cumplida: {fileID: 1946732779}
-  mision3Cumplida: {fileID: 1946732779}
-  mision4Cumplida: {fileID: 1316024225}
-  mision5Cumplida: {fileID: 1388297177}
-  mision6Cumplida: {fileID: 1381471936}
-  mision7Cumplida: {fileID: 1946732779}
-  mision8Cumplida: {fileID: 1946732779}
-  mision9Cumplida: {fileID: 1946732779}
-  contadorHidratacion: 0
-  BtnContinuar: {fileID: 1361965946}
-  recogerA: {fileID: 1946732779}
-  recogerB: {fileID: 1907778101}
-  recogerC: {fileID: 1946732779}
-  alasCohete: {fileID: 544251190}
-  baseCohete: {fileID: 1538285843}
-  cabezaCohete: {fileID: 544251190}
 --- !u!1 &818459969
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,7 +2857,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &891423125
 GameObject:
@@ -2990,7 +2940,7 @@ Transform:
   m_LocalScale: {x: 23.234964, y: 24.735178, z: 0.91476244}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &891423128
 MonoBehaviour:
@@ -3371,7 +3321,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3391,15 +3341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4129,7 +4079,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 710873529}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: AbrirCerrarMisiones, Assembly-CSharp
         m_MethodName: AbrirOCerrarMisionest
         m_Mode: 1
@@ -5039,15 +4989,15 @@ PrefabInstance:
     - target: {fileID: 8386587841586400355, guid: d737d8b62c349004ab3f9e690bd50452, type: 3}
       propertyPath: mision
       value: 
-      objectReference: {fileID: 710873531}
+      objectReference: {fileID: 0}
     - target: {fileID: 8386587841586400355, guid: d737d8b62c349004ab3f9e690bd50452, type: 3}
       propertyPath: mision1
       value: 
-      objectReference: {fileID: 710873531}
+      objectReference: {fileID: 0}
     - target: {fileID: 8386587841586400355, guid: d737d8b62c349004ab3f9e690bd50452, type: 3}
       propertyPath: mision2
       value: 
-      objectReference: {fileID: 710873531}
+      objectReference: {fileID: 0}
     - target: {fileID: 8386587841586400355, guid: d737d8b62c349004ab3f9e690bd50452, type: 3}
       propertyPath: sliderTemperatura
       value: 
@@ -5387,7 +5337,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1747946506
 MonoBehaviour:
@@ -5904,11 +5854,6 @@ PrefabInstance:
 --- !u!224 &1907778100 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1891731516370920534, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
-  m_PrefabInstance: {fileID: 1907778099}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1907778101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1891731516370920535, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
   m_PrefabInstance: {fileID: 1907778099}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1946732779
