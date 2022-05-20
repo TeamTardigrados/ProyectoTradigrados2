@@ -3348,6 +3348,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 891423126}
     - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
+      propertyPath: nieve
+      value: 
+      objectReference: {fileID: 7503849989218310084, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+    - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
       propertyPath: fuego1
       value: 
       objectReference: {fileID: 2033662379}

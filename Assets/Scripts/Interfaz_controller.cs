@@ -45,6 +45,7 @@ public class Interfaz_controller : MonoBehaviour
         {
             //frio
             Fondo.color = Color.Lerp(Color.cyan, Color.white, sliderTemperatura.value + 0.5f);
+            
             nieve.Play();
         }
         estadisticaTemperatura.text = ((int)(200f * sliderTemperatura.value) - 100f).ToString();
@@ -78,6 +79,7 @@ public class Interfaz_controller : MonoBehaviour
         {
             fuego1.gameObject.transform.position = new Vector3(248, 114, 0);
             fuego2.gameObject.transform.position = new Vector3(802, 111, 0);
+            
         }
     }
     public void FuegoSound()

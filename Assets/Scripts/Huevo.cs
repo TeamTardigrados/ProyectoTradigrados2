@@ -50,7 +50,7 @@ public class Huevo : MonoBehaviour
         yield return new WaitForSecondsRealtime(waitTimeBrokenEgg);
         recogerP.SetActive(true);
         turbinaCohete.SetActive(true);
-        dialoguePanel.LineTemp = 2;
+        dialoguePanel.LineTemp = 4;
         dialoguePanel.StartDialogue();
         BtnContinuar.interactable = true;
     }

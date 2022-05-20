@@ -2803,7 +2803,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: lineTemp
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueText
@@ -2815,7 +2815,16 @@ PrefabInstance:
       objectReference: {fileID: 808593923}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 5
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: 'Traigo ante usted este regalo... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Incluso en este estado, su m\xE1s vulnerable, es una forma de vida
+        extraordinaria..."
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[2]
@@ -2825,7 +2834,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[3]
-      value: 
+      value: Abre el huevo con el click!! :D
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: "Esta microsc\xF3pica criatura es un tard\xEDgrado, tambi\xE9n conocido
+        como\n osito de agua..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[5]
+      value: "El tard\xEDgrado es uno de los animales m\xE1s resistentes y facinantes
+        \nde nuestro planeta."
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817337, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: m_Name
