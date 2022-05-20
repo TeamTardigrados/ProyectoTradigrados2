@@ -1162,7 +1162,7 @@ PrefabInstance:
       objectReference: {fileID: 1688300005}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[0]
@@ -1189,36 +1189,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[5]
-      value: "Extraordinario, \xBFno crees? Ahora, vamos a subir la temperatura a
-        algo\n un poco m\xE1s c\xF3modo."
+      value: "Extraordinario, \xBFno crees? Ahora, nuestro amiguito no podr\xE1 despertar\n
+        debido a las condiciones hostiles que lo envuelven.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[6]
+      value: "La manera para que despierte tenerlo en condiciones optimas \ncomo
+        lo puede ser subir un poco la temperatura."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[7]
       value: "Necesitamos que nuestro amiguito despierte, y  no lo har\xE1 hasta
         que\n las condiciones no sean tan hostiles."
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
-      propertyPath: dialogueLines.Array.data[7]
+      propertyPath: dialogueLines.Array.data[8]
       value: "\xA1Ah! Olvid\xE9 mencionarlo, para que el tard\xEDgrado pueda salir
         por completo\n de la Criptobiosis, necesita rehidratarse.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
-      propertyPath: dialogueLines.Array.data[8]
-      value: 'Prueba brindarle un poco de agua con el GOTERO.
+      propertyPath: dialogueLines.Array.data[9]
+      value: 'Debes de brindarle un poco de agua con el GOTERO, para que despierte.
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: "\xA1Perfecto! ya desperto.\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[10]
-      value: "\xA1Perfecto! ya desperto.\n"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[11]
-      value: "\xA1Perfecto! ya desperto.\n"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817337, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: m_Name
