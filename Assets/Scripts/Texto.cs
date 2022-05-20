@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Texto : MonoBehaviour
 {
+    [SerializeField] Button BtnContinuar;
     [SerializeField] private Button dialogueButton = null;
     [SerializeField] private GameObject dialoguePanel = null;
     [SerializeField] private TMP_Text dialogueText = null;
@@ -19,6 +20,10 @@ public class Texto : MonoBehaviour
 
     public int LineTemp { get => lineTemp; set => lineTemp = value; }
 
+    void Start()
+    {
+        BtnContinuar.interactable = false;
+    }
     private void Awake()
     {
         soundManager = FindObjectOfType<SoundManager>();
@@ -87,6 +92,7 @@ public class Texto : MonoBehaviour
         soundManager.SeleccionAudio(5, 0.5f);
         dialogueText.text = dialogueLines[lineIndex];
         dialogueButton.interactable = true;
+        BtnContinuar.interactable = true;
     }
 
     private IEnumerator ShowLine()
