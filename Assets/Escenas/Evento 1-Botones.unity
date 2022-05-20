@@ -2805,6 +2805,22 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 808593923}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: 'El huevo se mueve un poco, parece necesitar ayuda para eclosionar.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: 'prueba
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817337, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: m_Name
       value: Tardigrado boton
