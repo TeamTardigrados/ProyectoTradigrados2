@@ -1726,6 +1726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1b6646bc21dda46885ac2c595c2353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BtnContinuar: {fileID: 909055763}
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
   dialogueText: {fileID: 0}
@@ -2270,6 +2271,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909055763 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+  m_PrefabInstance: {fileID: 1806516731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &946984163
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,6 +4850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1b6646bc21dda46885ac2c595c2353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BtnContinuar: {fileID: 909055763}
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
   dialogueText: {fileID: 1824334957}
@@ -4846,23 +4859,14 @@ MonoBehaviour:
   charsToPlays: 3
   typingTime: 0.04
   dialogueLines:
-  - "Ahora si, dale un poco de agua al peque\xF1o."
-  - "\xA1Vaya, pero si no es la mism\xEDsima Marie Curie! ..."
-  - "Ella es una cient\xEDfica incre\xEDble, es la patrona de la radioactividad."
-  - "...\nOuch, esa fue Marie Curie, se\xF1oras y se\xF1ores..."
-  - "Tanta radiaci\xF3n es muy da\xF1ina para los seres vivos."
-  - "...No para nuestro amigo tard\xEDgrado,\n \xE9l estar\xE1 bien. "
-  - "Tiene una prote\xEDna llamada damage suppressor o <<Dsup>>, para abreviar,..."
+  - "Ouch, esa fue la famosa Marie Curie, se\xF1oras y se\xF1ores. \nTanta radiaci\xF3n
+    es muy da\xF1ina para los seres vivos\u2026"
+  - "Pero no para nuestro amigo tard\xEDgrado, \xE9l estar\xE1 bien\u2026 "
+  - "Tiene una prote\xEDna supresora de da\xF1o\u2026"
   - "\xA1Esta protege el ADN del tard\xEDgrado de da\xF1arse por la radiaci\xF3n
-    temporalmente!"
-  - "Incre\xEDble, \xBFno crees?"
-  - "\u2026 Creo que es mejor que salgamos de aqu\xED."
-  - "...\xA1Vaya!\n\xA1Has conseguido todas las piezas!"
-  - "Parece ser que ahora tenemos todo lo necesario para un viaje espacial, \xBFno?..."
-  - "\r\n\xBFEstamos listos? \xA1Pues a la carga!\r\n"
-  - '
-
-'
+    temporalmente!..."
+  - "Incre\xEDble, \xBFno crees?..."
+  - "Pero lo mejor es que salgamos de aqu\xED."
 --- !u!1 &1733479130
 GameObject:
   m_ObjectHideFlags: 0
@@ -5427,6 +5431,10 @@ PrefabInstance:
     - target: {fileID: 495324392156548182, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: set_interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 495324392156548182, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 495324393414027232, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -280,7 +280,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1037515748}
         m_TargetAssemblyTypeName: Texto, Assembly-CSharp
         m_MethodName: HandleClick
         m_Mode: 6
@@ -628,7 +628,7 @@ PrefabInstance:
     - target: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1037515748}
     - target: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: HandleClick
@@ -639,6 +639,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+--- !u!114 &134095202 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2893524981773618103, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+  m_PrefabInstance: {fileID: 134095201}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &134095203 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 342054447435987405, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
@@ -649,6 +660,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 342054447435987402, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
   m_PrefabInstance: {fileID: 134095201}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &134095205 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+  m_PrefabInstance: {fileID: 134095201}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &178619237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1859,6 +1881,7 @@ GameObject:
   - component: {fileID: 1037515746}
   - component: {fileID: 1037515745}
   - component: {fileID: 1037515747}
+  - component: {fileID: 1037515748}
   m_Layer: 5
   m_Name: Tardigrado boton
   m_TagString: Untagged
@@ -1967,7 +1990,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1037515748}
         m_TargetAssemblyTypeName: Texto, Assembly-CSharp
         m_MethodName: StartDialogue
         m_Mode: 1
@@ -1991,6 +2014,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1037515748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037515743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b1b6646bc21dda46885ac2c595c2353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BtnContinuar: {fileID: 134095205}
+  dialogueButton: {fileID: 1037515747}
+  dialoguePanel: {fileID: 134095204}
+  dialogueText: {fileID: 134095202}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 3
+  typingTime: 0.04
+  dialogueLines:
+  - "\xBFSab\xEDas esto? Este peque\xF1o animalito es el \xFAnico capaz \nde sobrevivir
+    al vac\xEDo del espacio."
+  - "Es verdaderamente una forma extraordinaria de vida\u2026"
 --- !u!1 &1046539426
 GameObject:
   m_ObjectHideFlags: 0
