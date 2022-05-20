@@ -63,7 +63,7 @@ public class Interfaz_controller : MonoBehaviour
         {
             fuego1.SetActive(true);
             fuego2.SetActive(true);
-            FuegoSound();
+            //FuegoSound();
         }
 
     }

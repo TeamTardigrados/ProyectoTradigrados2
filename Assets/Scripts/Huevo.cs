@@ -39,7 +39,7 @@ public class Huevo : MonoBehaviour
 
             case 3:
                 animator.SetTrigger("isOpen3");
-                soundManager.SeleccionAudio(7, 0.5f);
+                soundManager.SeleccionAudio(6, 0.5f);
                 StartCoroutine(WaitThenLoad());
                 break;
         }
@@ -50,6 +50,7 @@ public class Huevo : MonoBehaviour
         yield return new WaitForSecondsRealtime(waitTimeBrokenEgg);
         recogerP.SetActive(true);
         turbinaCohete.SetActive(true);
+        soundManager.SeleccionAudio(7, 0.5f);
         dialoguePanel.LineTemp = 4;
         dialoguePanel.StartDialogue();
         BtnContinuar.interactable = true;

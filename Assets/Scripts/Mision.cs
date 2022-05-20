@@ -57,9 +57,14 @@ public class Mision : MonoBehaviour
     [SerializeField] private GameObject alasCohete = null;
     [SerializeField] private GameObject baseCohete = null;
     [SerializeField] private GameObject cabezaCohete = null;
+    private SoundManager soundManager;
     void Start()
     {
         BtnContinuar.interactable = false;
+    }
+    private void Awake()
+    {
+        soundManager = FindObjectOfType<SoundManager>();
     }
     void AbrirCuadroMisiones()
     {
@@ -227,7 +232,7 @@ public class Mision : MonoBehaviour
     {
         radiacionCambiante = radiacion - radiacionAnterior;
         radiacionAnterior = radiacion;
-        Debug.Log("cambio de radiación " + radiacionCambiante);
+        //Debug.Log("cambio de radiación " + radiacionCambiante);
     }
     void AumentaRadiacionyTemperatura()
     {
@@ -302,12 +307,14 @@ public class Mision : MonoBehaviour
         yield return new WaitForSecondsRealtime(3f);
         recogerA.SetActive(true);
         alasCohete.SetActive(true);
+        soundManager.SeleccionAudio(7, 0.5f);
 
     }
     private IEnumerator WaitThenLoadEvento3()
     {
         yield return new WaitForSecondsRealtime(3f);
         recogerB.SetActive(true);
+        soundManager.SeleccionAudio(7, 0.5f);
         baseCohete.SetActive(true);
     }
 
@@ -315,6 +322,8 @@ public class Mision : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3f);
         recogerC.SetActive(true);
+        soundManager.SeleccionAudio(7, 0.5f);
+        Debug.Log("suenaa");
         cabezaCohete.SetActive(true);
     }
 }
