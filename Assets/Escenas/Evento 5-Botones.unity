@@ -598,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -2597,6 +2597,10 @@ MonoBehaviour:
   dialogueButton: {fileID: 1037515747}
   dialoguePanel: {fileID: 134095204}
   dialogueText: {fileID: 134095202}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 0
+  typingTime: 0
   dialogueLines:
   - "\xBFSab\xEDas esto? \n\n\xA1Este peque\xF1o animalito es el \xFAnico capaz de
     sobrevivir al vac\xEDo del espacio!"
