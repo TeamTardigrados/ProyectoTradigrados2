@@ -1501,7 +1501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2812859705267312441, guid: 82ea4564d43f74b46813b7ae0d6367a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1729,6 +1729,10 @@ MonoBehaviour:
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
   dialogueText: {fileID: 0}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 0
+  typingTime: 0
   dialogueLines:
   - "Ahora si, dale un poco de agua al peque\xF1o."
   - "\xA1Vaya, pero si no es la mism\xEDsima Marie Curie! ..."
@@ -1794,7 +1798,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483632, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1842,7 +1846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4425998481791483633, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f6d33cd6a889d747b7e51e895cd4e3a, type: 3}
@@ -3174,7 +3178,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1954533162339378150, guid: 9c0d2012d6a9d7e4ba83d3a3ca7a21d7, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1954533162339378150, guid: 9c0d2012d6a9d7e4ba83d3a3ca7a21d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3227,6 +3231,17 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1954533162339378153, guid: 9c0d2012d6a9d7e4ba83d3a3ca7a21d7, type: 3}
   m_PrefabInstance: {fileID: 1116705904}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1141804669 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2893524981773618103, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+  m_PrefabInstance: {fileID: 1806516731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1170670374
 GameObject:
   m_ObjectHideFlags: 0
@@ -3726,7 +3741,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4258913077796929908, guid: a111444211ac32c46ba0992c26fc6a5a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4258913077796929908, guid: a111444211ac32c46ba0992c26fc6a5a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4493,7 +4508,7 @@ Transform:
   m_LocalScale: {x: 25, y: 25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1661058742
 GameObject:
@@ -4804,7 +4819,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
-  dialogueText: {fileID: 0}
+  dialogueText: {fileID: 1141804669}
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 3
+  typingTime: 0.04
   dialogueLines:
   - "Ahora si, dale un poco de agua al peque\xF1o."
   - "\xA1Vaya, pero si no es la mism\xEDsima Marie Curie! ..."
@@ -5458,6 +5477,14 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1670827995}
+    - target: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleClick
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
 --- !u!224 &1806516733 stripped
@@ -5623,7 +5650,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1880668997
 GameObject:
@@ -5832,6 +5859,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894759780}
   m_CullTransparentMesh: 1
+--- !u!82 &1940978726 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5959107166510162349, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+  m_PrefabInstance: {fileID: 2077494784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1989157835
 GameObject:
   m_ObjectHideFlags: 0
@@ -6408,6 +6440,54 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1940978726}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2077494786}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: e5a89cfa8ff229443a27d3c4a8dc0caa, type: 3}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1891731516708740308, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1891731516708740309, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
       propertyPath: m_SizeDelta.x
       value: 412.5389
@@ -6424,6 +6504,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e61870b4908c37a419e031cb099637d6, type: 3}
+    - target: {fileID: 5959107166510162349, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959107166510162349, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e5a89cfa8ff229443a27d3c4a8dc0caa, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c848e1711cda6c4b95ee9bc47503484, type: 3}
 --- !u!224 &2077494785 stripped
