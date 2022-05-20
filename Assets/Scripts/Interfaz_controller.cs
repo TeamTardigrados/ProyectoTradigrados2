@@ -8,6 +8,7 @@ public class Interfaz_controller : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer Fondo = null;
     [SerializeField] private Slider sliderTemperatura = null;
+    [SerializeField] ParticleSystem nieve;
     public Text estadisticaTemperatura;
     public float temperaturaActual=0;
 
@@ -24,6 +25,7 @@ public class Interfaz_controller : MonoBehaviour
     private void Awake()
     {
         soundManager = FindObjectOfType<SoundManager>();
+        nieve.GetComponent<ParticleSystem>();
     }
     void Update()
     {
@@ -37,11 +39,14 @@ public class Interfaz_controller : MonoBehaviour
         {
             //calor
             Fondo.color = Color.Lerp(Color.white, Color.red, sliderTemperatura.value - 0.5f);
+            nieve.Stop();
         }
         else
         {
             //frio
             Fondo.color = Color.Lerp(Color.cyan, Color.white, sliderTemperatura.value + 0.5f);
+            
+            nieve.Play();
         }
         estadisticaTemperatura.text = ((int)(200f * sliderTemperatura.value) - 100f).ToString();
 
@@ -58,6 +63,7 @@ public class Interfaz_controller : MonoBehaviour
         {
             fuego1.SetActive(true);
             fuego2.SetActive(true);
+            FuegoSound();
         }
 
     }
@@ -67,13 +73,12 @@ public class Interfaz_controller : MonoBehaviour
         {
             fuego1.gameObject.transform.position = new Vector3(248, 199, 0);
             fuego2.gameObject.transform.position = new Vector3(802, 196, 0);
-            FuegoSound();
+            
         }
         else if (sliderTemperatura.value <= 0.9f)
         {
             fuego1.gameObject.transform.position = new Vector3(248, 114, 0);
             fuego2.gameObject.transform.position = new Vector3(802, 111, 0);
-            FuegoSound();
         }
     }
     public void FuegoSound()

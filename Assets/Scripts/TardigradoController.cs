@@ -6,15 +6,17 @@ public class TardigradoController : MonoBehaviour
 {
     // Start is called before the first frame update
     Animator anim;
-    [SerializeField]
-    Interfaz_controller interfazController;
-    [SerializeField]
-    Humedad humedad;
+    [SerializeField]Interfaz_controller interfazController;
+    [SerializeField]Humedad humedad;
+    private SoundManager soundManager;
     void Start()
     {
         anim = GetComponent<Animator>();
     }
-
+    private void Awake()
+    {
+        soundManager = FindObjectOfType<SoundManager>();
+    }
     private void OnEnable()
     {
         humedad.OnWaterEnd += Dried;
@@ -31,6 +33,7 @@ public class TardigradoController : MonoBehaviour
     void Dried()
     {
         anim.SetBool("isDried", true);
+        //soundManager.SeleccionAudio(0, 0.5f);
     }
 
     void Hydrated()

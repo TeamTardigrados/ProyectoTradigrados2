@@ -1160,7 +1160,7 @@ PrefabInstance:
       objectReference: {fileID: 1688300005}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[0]
@@ -1178,43 +1178,41 @@ PrefabInstance:
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[3]
       value: "Esta es una habilidad que le permite al tard\xEDgrado expulsar gran
-        parte del agua de su cuerpo para no congelarse!\r\n"
+        parte del agua\n de su cuerpo para no congelarse!\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[4]
       value: "\xA1Toda el agua que perdi\xF3 se reemplaza por una matriz gelatinosa
-        que protege sus c\xE9lulas de da\xF1o!"
+        que protege \nsus c\xE9lulas de da\xF1o!"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[5]
       value: "Extraordinario, \xBFno crees? Ahora, vamos a subir la temperatura a
-        algo un poco m\xE1s c\xF3modo."
+        algo\n un poco m\xE1s c\xF3modo."
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[6]
       value: "Necesitamos que nuestro amiguito despierte, y  no lo har\xE1 hasta
-        que las condiciones no sean tan hostiles."
+        que\n las condiciones no sean tan hostiles."
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[7]
-      value: "Necesitamos que nuestro amiguito despierte, y  no lo har\xE1 hasta
-        que las condiciones no sean tan hostiles."
+      value: "\xA1Ah! Olvid\xE9 mencionarlo, para que el tard\xEDgrado pueda salir
+        por completo\n de la Criptobiosis, necesita rehidratarse.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[8]
-      value: "\xA1Ah! Olvid\xE9 mencionarlo, para que el tard\xEDgrado pueda salir
-        por completo de la Criptobiosis, necesita rehidratarse.\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
-      propertyPath: dialogueLines.Array.data[9]
-      value: "\xA1Ah! Olvid\xE9 mencionarlo, para que el tard\xEDgrado pueda salir
-        por completo de la Criptobiosis, necesita rehidratarse.\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
-      propertyPath: dialogueLines.Array.data[10]
       value: 'Prueba brindarle un poco de agua con el GOTERO.
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[9]
+      value: "\xA1Perfecto! ya desperto.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
+      propertyPath: dialogueLines.Array.data[10]
+      value: "\xA1Perfecto! ya desperto.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: dialogueLines.Array.data[11]
@@ -6617,6 +6615,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &4148403923169832393
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7503849989218310086, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_Name
+      value: Snow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 544.8943
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 564
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -94
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503849989218310091, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+--- !u!198 &5886504524481493517 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7503849989218310084, guid: 033991972e80e1a4bbd0e3652891b791, type: 3}
+  m_PrefabInstance: {fileID: 4148403923169832393}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7420061372806488450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6740,6 +6800,10 @@ PrefabInstance:
       propertyPath: Fondo
       value: 
       objectReference: {fileID: 891423126}
+    - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
+      propertyPath: nieve
+      value: 
+      objectReference: {fileID: 5886504524481493517}
     - target: {fileID: 7420061372685295428, guid: 4798634e4cbb16a418c5dc0b44914a5f, type: 3}
       propertyPath: fuego1
       value: 
