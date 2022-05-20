@@ -7,16 +7,16 @@ public class CambioEscena : MonoBehaviour
 {
     [SerializeField] private float transitionTime = 1f;
     //public int numeroEscena;
-    private Animator transitionAnimator;
+    //private Animator transitionAnimator;
 
-    void Start()
-    {
-        transitionAnimator = GetComponentInChildren<Animator>();
-    }
-    private void Update()
-    {
+    //void Start()
+    //{
+    //    //transitionAnimator = GetComponentInChildren<Animator>();
+    //}
+    //private void Update()
+    //{
 
-    }
+    //}
     public void Iniciar()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
@@ -25,7 +25,7 @@ public class CambioEscena : MonoBehaviour
     }
     public IEnumerator SceneLoad(int sceneIndex)
     {
-        transitionAnimator.SetTrigger("StartTransition");
+        //transitionAnimator.SetTrigger("StartTransition");
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene(sceneIndex);
     }
