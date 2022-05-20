@@ -309,6 +309,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60147110}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 6c3d539 (Revert "evento 3")
 --- !u!1 &99590535
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,6 +450,7 @@ MonoBehaviour:
   dialogueButton: {fileID: 99590539}
   dialoguePanel: {fileID: 218259674}
   dialogueText: {fileID: 0}
+<<<<<<< HEAD
   dialogueLines:
   - "Ah, eres t\xFA. Olvid\xE9 por completo llamarte...."
   - "\xBFQu\xE9? \xBFD\xF3nde estamos? Pues, creo que la pregunta m\xE1s acertada
@@ -469,6 +475,16 @@ MonoBehaviour:
   - ...
   - "Parece ser que ser\xE1 imposible despertarle aqu\xED\u2026"
   - "\xBFQu\xE9 te parece si conocemos a los humanos? "
+=======
+  lineIndex: 0
+  lineTemp: 0
+  charsToPlays: 0
+  typingTime: 0
+  dialogueLines:
+  - No me esperaba eso...
+  - "\xBFQu\xE9 te parece si conocemos a los humanos? "
+>>>>>>> 7e06c00bc705faa0ebdb31a0b7970a6bcc65916f
+>>>>>>> parent of 6c3d539 (Revert "evento 3")
 --- !u!1 &178619237
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +723,10 @@ PrefabInstance:
     - target: {fileID: 1997567932225553958, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5212971022354462279, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
