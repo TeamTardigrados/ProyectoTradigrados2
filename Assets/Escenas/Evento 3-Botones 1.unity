@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1b6646bc21dda46885ac2c595c2353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BtnContinuar: {fileID: 292316990}
+  BtnContinuar: {fileID: 2662064314435203298}
   dialogueButton: {fileID: 99590539}
   dialoguePanel: {fileID: 218259674}
   dialogueText: {fileID: 1438901886}
@@ -1112,17 +1112,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262814616}
   m_CullTransparentMesh: 1
---- !u!114 &292316990 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2662064313644352430, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
-  m_PrefabInstance: {fileID: 2662064314435203297}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &309299740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6542,3 +6531,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 78353076940021558, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
+--- !u!1 &2662064314435203298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2662064313644352428, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
+  m_PrefabInstance: {fileID: 2662064314435203297}
+  m_PrefabAsset: {fileID: 0}

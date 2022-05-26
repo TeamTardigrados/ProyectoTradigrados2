@@ -754,7 +754,7 @@ PrefabInstance:
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: BtnContinuar
       value: 
-      objectReference: {fileID: 1091882647}
+      objectReference: {fileID: 544251190}
     - target: {fileID: 1081153572319817329, guid: bee30f1b2d1502645849d2bdf952adce, type: 3}
       propertyPath: charsToPlays
       value: 6
@@ -1571,7 +1571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 573, y: 427}
+  m_AnchoredPosition: {x: 1144, y: 427}
   m_SizeDelta: {x: -1835.238, y: 84.762}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &544251192
@@ -2657,7 +2657,7 @@ MonoBehaviour:
   mision8Cumplida: {fileID: 1946732779}
   mision9Cumplida: {fileID: 1946732779}
   contadorHidratacion: 0
-  BtnContinuar: {fileID: 1091882647}
+  BtnContinuar: {fileID: 1845553221}
   recogerA: {fileID: 1946732779}
   recogerB: {fileID: 1907778101}
   recogerC: {fileID: 1946732779}
@@ -3591,17 +3591,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c12916b19ce1d0e4f95b7bf0098ed0bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1091882647 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2662064313644352430, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
-  m_PrefabInstance: {fileID: 2662064314435203297}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1170670374
@@ -5698,6 +5687,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1763591177}
   m_CullTransparentMesh: 1
+--- !u!1 &1845553221 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2662064313644352428, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
+  m_PrefabInstance: {fileID: 2662064314435203297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1865031604
 GameObject:
   m_ObjectHideFlags: 0
@@ -6637,6 +6631,10 @@ PrefabInstance:
     - target: {fileID: 2662064313644352428, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
       propertyPath: m_Name
       value: Siguente
+      objectReference: {fileID: 0}
+    - target: {fileID: 2662064313644352428, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2662064313644352430, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
       propertyPath: m_Colors.m_PressedColor.b

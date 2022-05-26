@@ -47,7 +47,7 @@ public class Mision : MonoBehaviour
 
     public int contadorHidratacion = 0;
 
-    [SerializeField] Button BtnContinuar;
+    [SerializeField] GameObject BtnContinuar;
 
     //Recoger piezas del cohete
     [SerializeField] private GameObject recogerA = null;
@@ -60,7 +60,7 @@ public class Mision : MonoBehaviour
     private SoundManager soundManager;
     void Start()
     {
-        BtnContinuar.interactable = false;
+        BtnContinuar.SetActive(false);
     }
     private void Awake()
     {
@@ -281,7 +281,7 @@ public class Mision : MonoBehaviour
         if (mision1Cumplida.activeSelf == true && mision2Cumplida.activeSelf == true && mision3Cumplida.activeSelf == true && flagEvento2)
         {
             StartCoroutine(WaitThenLoadEvento2());
-            BtnContinuar.interactable = true;
+            //BtnContinuar.interactable = true;
             flagEvento2 = false;
         }
 
@@ -289,7 +289,7 @@ public class Mision : MonoBehaviour
         if (mision4Cumplida.activeSelf == true && mision5Cumplida.activeSelf == true && mision6Cumplida.activeSelf == true && flagEvento3)
         {
             StartCoroutine(WaitThenLoadEvento3());
-            BtnContinuar.interactable = true;
+            
             flagEvento3 = false;
         }
 
@@ -297,7 +297,7 @@ public class Mision : MonoBehaviour
         if (mision7Cumplida.activeSelf == true && mision8Cumplida.activeSelf == true && mision9Cumplida.activeSelf == true && flagEvento4)
         {
             StartCoroutine(WaitThenLoadEvento4());
-            BtnContinuar.interactable = true;
+            //BtnContinuar.interactable = true;
             flagEvento4 = false;
         }
     }
@@ -309,6 +309,8 @@ public class Mision : MonoBehaviour
         alasCohete.SetActive(true);
         //soundManager.SeleccionAudio(7, 0.5f);
 
+        BtnContinuar.SetActive(true);
+
     }
     private IEnumerator WaitThenLoadEvento3()
     {
@@ -316,6 +318,9 @@ public class Mision : MonoBehaviour
         recogerB.SetActive(true);
         //soundManager.SeleccionAudio(7, 0.5f);
         baseCohete.SetActive(true);
+        BtnContinuar.SetActive(true);
+
+        
     }
 
     private IEnumerator WaitThenLoadEvento4()
@@ -325,6 +330,7 @@ public class Mision : MonoBehaviour
         //soundManager.SeleccionAudio(7, 0.5f);
         //Debug.Log("suenaa");
         cabezaCohete.SetActive(true);
+        BtnContinuar.SetActive(true);
     }
 }
 

@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &19249765 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2662064313644352430, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
-  m_PrefabInstance: {fileID: 2662064314435203297}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &33123683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,7 +1715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1b6646bc21dda46885ac2c595c2353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BtnContinuar: {fileID: 909055763}
+  BtnContinuar: {fileID: 0}
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
   dialogueText: {fileID: 0}
@@ -2271,17 +2260,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &909055763 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3863469063619625383, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
-  m_PrefabInstance: {fileID: 1806516731}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &946984163
 GameObject:
   m_ObjectHideFlags: 0
@@ -5006,7 +4984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1b6646bc21dda46885ac2c595c2353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BtnContinuar: {fileID: 19249765}
+  BtnContinuar: {fileID: 1894759780}
   dialogueButton: {fileID: 1670827994}
   dialoguePanel: {fileID: 1806516734}
   dialogueText: {fileID: 1824334957}
@@ -5530,7 +5508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 342054447435987402, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 342054447435987404, guid: 44bbb2c0a58946a4d8d1f3213d14b2d2, type: 3}
       propertyPath: m_Type
@@ -5964,7 +5942,7 @@ MonoBehaviour:
   mision8Cumplida: {fileID: 319187962}
   mision9Cumplida: {fileID: 1504746133}
   contadorHidratacion: 0
-  BtnContinuar: {fileID: 19249765}
+  BtnContinuar: {fileID: 2662064314435203298}
   recogerA: {fileID: 555551487}
   recogerB: {fileID: 555551487}
   recogerC: {fileID: 2077494786}
@@ -6120,7 +6098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9, y: 23}
+  m_AnchoredPosition: {x: -865, y: 23}
   m_SizeDelta: {x: 53.1083, y: 53.1083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1894759782
@@ -7192,3 +7170,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 78353076940021558, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
+--- !u!1 &2662064314435203298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2662064313644352428, guid: 10fb4d694da1c3e4cb89c144f8feef1e, type: 3}
+  m_PrefabInstance: {fileID: 2662064314435203297}
+  m_PrefabAsset: {fileID: 0}
